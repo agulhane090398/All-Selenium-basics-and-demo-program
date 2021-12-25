@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- @Before Suite is executed here -->
+<suite name="Suite1">
+
+	<!-- @Before test is executed here -->
+	<test name="Smoke">
+
+		<!-- @Before Class is executed here -->
+		<classes>
+
+			<!-- @Before Method is executed here -->
+			<class name="testNG.RefiffLoginTest">
+			</class><!-- @Test 1 is executed here -->
+	
+			<class name="testNG.RediffPOMTest">
+			</class><!-- @Test 2 is executed here -->
+			<!-- @After Method is executed here -->
+
+		</classes>
+		<!-- @After Class is executed here -->
+
+	</test>
+	<!-- @After test is executed here -->
+
+</suite>
+<!-- @After Suite is executed here -->

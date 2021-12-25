@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Methods">
+	<test name="Methods">
+		<classes>
+			<class name="testNG.MyFirstTest">
+				<methods>
+					<include name="invalidlogin" />
+				</methods>
+			</class>
+			<class name="testNG.GoogleLinkText">
+				<methods>
+					<include name="imageSearch" />
+					<include name="about" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

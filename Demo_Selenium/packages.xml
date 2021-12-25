@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- @Before Suite is executed here -->
+<suite name="Suite1">
+
+	<!-- @Before test is executed here -->
+	<test name="Regression 2">
+
+		<!-- runs all test cases of specified packages -->
+		<packages>
+			<package name="testNG.*" />
+		</packages>
+		
+	</test>
+	<!-- @After test is executed here -->
+
+</suite>
+<!-- @After Suite is executed here -->

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Groups">
+	<test name="pri1 Test">
+		<groups>
+			<run>
+				<include name="pri1" />	<!-- runs those Methods -->
+				<exclude name="pri2" />	<!-- leaves those Methods -->
+			</run>
+		</groups>
+		<classes>
+			<class name="testNG.MyFirstTest">
+			</class>
+			<class name="testNG.GoogleLinkText">
+			</class>
+		</classes>
+	</test>
+</suite>

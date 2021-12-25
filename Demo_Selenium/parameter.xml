@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Groups">
+<parameter name="username" value="admin"/>
+<parameter name="password" value="admin"/>
+	<test name="Regression">	
+		<classes>
+			<class name="testNG.EchoTest">
+			</class>
+		</classes>
+	</test>
+</suite>
