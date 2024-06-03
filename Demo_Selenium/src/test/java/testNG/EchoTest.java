@@ -30,6 +30,8 @@ public class EchoTest {
 	@Test(dataProvider = "getData")
 	public void loginDDT(String username, String password)
 	{
+		//Link verification
+		driver.findElement(By.id("txtCustomerID")).clear();
 		WebElementMethods.enterText(driver, By.id("txtCustomerID"), username);
 		WebElementMethods.enterText(driver, By.id("txtPassword"), password);
 		WebElementMethods.clickButton(driver, By.id("Butsub"));
